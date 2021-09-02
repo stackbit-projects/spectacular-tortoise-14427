@@ -1,0 +1,143 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  data:
+    type: data
+    label: Data
+    file: data.yml
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: boolean
+        name: support_dark_mode
+        label: Support Dark Mode
+      - type: boolean
+        name: fork
+        label: Fork
+      - type: object
+        name: contact
+        label: Contact
+        fields:
+          - type: string
+            name: email
+            label: Email
+          - type: string
+            name: github
+            label: Github
+          - type: string
+            name: linkedin
+            label: Linkedin
+      - type: list
+        name: languages
+        label: Languages
+        items:
+          type: object
+          fields:
+            - type: string
+              name: idiom
+              label: Idiom
+      - type: list
+        name: education
+        label: Education
+        items:
+          type: object
+          fields:
+            - type: string
+              name: degree
+              label: Degree
+            - type: string
+              name: time
+              label: Time
+            - type: string
+              name: university
+              label: University
+      - type: list
+        name: skills
+        label: Skills
+        items:
+          type: object
+          fields:
+            - type: string
+              name: category
+              label: Category
+            - type: list
+              name: skill
+              label: Skill
+              items:
+                type: string
+      - type: text
+        name: profile
+        label: Profile
+      - type: list
+        name: experience
+        label: Experience
+        items:
+          type: object
+          fields:
+            - type: string
+              name: role
+              label: Role
+            - type: string
+              name: time
+              label: Time
+            - type: string
+              name: company
+              label: Company
+            - type: text
+              name: details
+              label: Details
+            - type: string
+              name: technologies_used
+              label: Technologies Used
+      - type: list
+        name: publications
+        label: Publications
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: link
+              label: Link
+            - type: string
+              name: authors
+              label: Authors
+            - type: string
+              name: conference
+              label: Conference
+      - type: list
+        name: projects
+        label: Projects
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: text
+              name: details
+              label: Details
+      - type: list
+        name: volunteering
+        label: Volunteering
+        items:
+          type: object
+          fields:
+            - type: string
+              name: time
+              label: Time
+            - type: string
+              name: role
+              label: Role
+            - type: string
+              name: company
+              label: Company
+            - type: text
+              name: details
+              label: Details
